@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     zip \
-    uncurl \
+    curl \
     git
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
